@@ -117,7 +117,7 @@ Le serveur démarre sur **http://localhost:8080**
 ## Configuration mail
 Éditer `application.properties` :
 ```properties
-spring.mail.username=votre-email@gmail.com
+spring.mail.username=projettutore77100@gmail.com
 spring.mail.password=votre-mot-de-passe-app   # App Password Gmail
 app.admin.email=admin@mmi.fr
 ```
