@@ -42,6 +42,20 @@ public class Projet {
 
     private String urlMedia; // lien vers le rendu (image, vidéo, etc.)
 
+    // ---------------------------------------------------------------
+    // Thumbnail — image de couverture affichée sur les cards
+    // Formats acceptés : jpg, jpeg, png — max 5MB
+    // ---------------------------------------------------------------
+    private String thumbnailUrl;
+
+    // ---------------------------------------------------------------
+    // Fichier principal du projet
+    // Formats acceptés : pdf, mp4, glb, gltf, png, jpg, jpeg
+    // ---------------------------------------------------------------
+    private String fichierUrl;      // URL Cloudinary du fichier
+    private String fichierNom;      // Nom original du fichier (ex: "rendu_final.pdf")
+    private String fichierType;     // Extension : "pdf", "mp4", "glb", "gltf", "png", "jpg", "jpeg"
+
     @JsonBackReference
     @ManyToOne
     @JoinColumn(name = "auteur_id")
